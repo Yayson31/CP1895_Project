@@ -1,0 +1,104 @@
+draft notes for Documentation: 
+
+project proposal
+
+1. Hypothesis - what I think the final product should look like 
+	-we are looking to build a dice duel game using python/tkinter where the player(user) rolls against the house(computer) where the highest roll wins the round. The main rule is a race to win 10 rounds total to win the war(game). 
+	
+	- the game will track/display scores per roll and per round, and displaying each die roll per round to make it user friendly to look at. 
+	
+	
+2. specifications 
+	- what the program must do from start to finish 
+	-think functionality 
+	
+	-what rules are we to follow 
+	example: 
+		-keep GUI clean for best user experience
+		-how the game responds to player action (pressing buttons)
+		-we are to follow the murach style of OOP 
+		
+	-maybe put some technical specs
+		-what language we are using
+		-what framework
+		-the architecture (using classes and such)
+		-name of a files running the app 
+	
+	proper way to visualize the app
+	UML diagram 
+		-class diagram 
+		-sequence diagram 
+	
+	
+	Aesthetic Plan (this one is worth 15%) 
+		-essentially the layout structure of the app 
+		-maybe colors if possile 
+		-anything details to making the app more appealing 
+		
+3. Scope of the project 
+	- what we will include (basics of the app)
+		-dice roll against computer app 
+		-keeps track of score 
+		-GUI interface
+		-rules to win 
+		
+	- what we will not include (not sure if we need this...)
+		-multiplayer
+		-any online feature 
+		-animations
+		-sounds effects 
+		
+4. Responsibilities and roles
+	-who will do what (GUI layout and aesthetics // game logic and structure)
+	-how to manage time we have properly with fashion
+	-this finishes with how we test the app... more to come for this 
+	
+	
+	
+	
+	
+================================================================================
+rules of the game : Dice Duel
+
+UML diagram will help show visual - this was just how I picture it 
+
+player vs house(computer) dice rolling game 
+
+each round player and computer roll six sided die
+
+highest roll wins the round = score is track for each round won per player 
+
+first to win 10 rounds wins the game
+
+round rules
+highest roll wins 1 point 
+only one roll for each player per round 
+any draws or ties will not count at all 
+
+
+flow of round
+player clicks roll die button 
+
+game logic generates random roll value from 1 - 6 for both player and house
+
+results of each roll value are displayed 
+
+game logic compares values against each other to determine who won or if ties
+
+score board updateds according to who won the round 
+
+game logic checks if either player reached 10 wins, if so, then popup will state who won
+
+if no winner yet, maybe a popup will tell player to roll again, or the lable will state roll again... (will need to figure this out)
+
+
+
+
+we need to figure out the OOP struture
+
+maybe create a game class that handels the logic and GUI class for appearance of app 
+
+
+
+
+
