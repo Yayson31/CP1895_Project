@@ -2,40 +2,79 @@ draft notes for Documentation:
 
 project proposal
 
-1. Hypothesis - what I think the final product should look like 
-	-we are looking to build a dice duel game using python/tkinter where the player(user) rolls against the house(computer) where the highest roll wins the round. The main rule is a race to win 10 rounds total to win the war(game). 
+1. Hypothesis draftV1 
+	- what I think the final product should look like 
+	-we are looking to build a dice duel game using python/tkinter where the player(user) rolls 
+	against the house(computer) where the highest roll wins the round. The main rule is a race to win 10 rounds total to win the war(game). 
 	
-	- the game will track/display scores per roll and per round, and displaying each die roll per round to make it user friendly to look at. 
+	- the game will track/display scores per roll and per round, and displaying each die 
+	roll per round to make it user friendly to look at. 
+	==============================================================================
 	
+	** Draft V2
+	"The goal of this project is to build a dice roll game named "Dice Duel" using the combination of python and tkinter. 
+	The game logic is where a player(user) rolls a six-sided die against a roll from the house(computer). The highest roll 
+	wins the round, and the main rule of the game is a race to win 10 rounds total to win the entire game."
+	
+	**Maybe add more to the hypo? 
+	
+	
+	The outcome of the final product is to produce: 
+	# state GUI status here of what you want to the final version of game to look like
+	-	a user friendly GUI layout to display all game data 
+	-	more details to come....
+	
+	# state gameLogic details
+	-	more to come.... 
+	
+	==============================================================================
 	
 2. specifications 
 	- what the program must do from start to finish 
-	-think functionality 
+	- think functionality game flow
 	
-	-what rules are we to follow 
+	** basic game flow 
+	gameStart 
+	click roll action 
+	real time gui updated
+	gamelogic 
+	display winning resuts (how are we displaying it, maybe add more to it?)
+	gameEnd(this causing came to stop completely, maybe add restart or reset option to play again?)
+	
+	
+	
+	-what are the rules we need to follow in order to achieve the final product 
 	example: 
-		-keep GUI clean for best user experience
+		-keep GUI clean for best user experience (come up with something on this)
 		-how the game responds to player action (pressing buttons)
 		-we are to follow the murach style of OOP 
+	
 		
 	-maybe put some technical specs
 		-what language we are using
+    		**Python 3
 		-what framework
+    		**Tkinter
 		-the architecture (using classes and such)
+    		**GUI class (DiceDuelFrame) to handle user interface
+    		**game logic info**
+    		**logic and visual code separate (murachlayers)
+		
 		-name of a files running the app 
+    		**to be updated once closer to final product
 	
-	proper way to visualize the app
-	UML diagram 
-		-class diagram 
-		-sequence diagram 
+	proper way to visualize the app (GUI draft mockup)
+	UML diagram ** (does it need to be included>?)
+		** need to go over this
 	
 	
 	Aesthetic Plan (this one is worth 15%) 
+	** add more details as we get closer to final product 
 		-essentially the layout structure of the app 
 		-maybe colors if possile 
 		-anything details to making the app more appealing 
 		
-3. Scope of the project 
+3. Scope of the project **maybe more details?
 	- what we will include (basics of the app)
 		-dice roll against computer app 
 		-keeps track of score 
@@ -50,6 +89,32 @@ project proposal
 		
 4. Responsibilities and roles
 	-who will do what (GUI layout and aesthetics // game logic and structure)
+	** Based on current available team members **
+	
+	Jason
+	-GUI layout and frame structure
+	-more details to be added as we get closer to final product
+	-Documentation and project proposal
+	
+	Tyler
+	-Game logic implimenation 
+	-more details to be added as we get closer to final product
+	-Documentation and project proposal
+	
+	Amanda (when available)
+	-help with any refinement 
+	-testing and final polishing 
+
+	**not sure if this section is even needed... go over this**
+	Team
+	-Communicaitons done though email, private messages, and voice calls
+	-Coordinated work for time efficiency 
+	
+
+Aesthetic design and spacing
+	
+	
+	
 	-how to manage time we have properly with fashion
 	-this finishes with how we test the app... more to come for this 
 	
@@ -92,11 +157,6 @@ game logic checks if either player reached 10 wins, if so, then popup will state
 if no winner yet, maybe a popup will tell player to roll again, or the lable will state roll again... (will need to figure this out)
 
 
-
-
-we need to figure out the OOP struture
-
-maybe create a game class that handels the logic and GUI class for appearance of app 
 
 
 

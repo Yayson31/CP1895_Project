@@ -29,7 +29,7 @@ class DiceDuelFrame(ttk.Frame):
         # player roll data frame 
         self.player_frame = ttk.Frame(self, padding="10 10 10 10", borderwidth=2, relief="solid")
         self.player_frame.grid(column=0, row=1)
-        self.player_roll_title = ttk.Label(self.player_frame, text="Player's Roll", font=("Arial", 12, "bold"))
+        self.player_roll_title = ttk.Label(self.player_frame, text="Player Roll", font=("Arial", 12, "bold"))
         self.player_roll_title.grid(column=0, row=0)
         
         self.player_roll = tk.StringVar(value="##") # hashtag set as place holder for now
@@ -106,21 +106,45 @@ class DiceDuelFrame(ttk.Frame):
         
         
         
-        # need to create a total rounds played frame to track overall rounds played 
+        # total rounds played frame
+        self.total_round_frame = ttk.Frame(self, padding="10 10 10 10", borderwidth=2, relief="solid")
+        self.total_round_frame.grid(column=0, row=4, columnspan=3)
+        
+        self.total_round_text = ttk.Label(self.total_round_frame, text="Total Rounds Played:", font=("Arial", 14))
+        self.total_round_text.grid(column=0, row=0, sticky=tk.E)
+        
+        self.total_round = tk.StringVar(value="##") # hashtag set as place holder for now
+        self.total_round_label = ttk.Label(self.total_round_frame, textvariable=self.total_round, font=("Arial", 14, "bold"))
+        self.total_round_label.grid(column=1, row=0, sticky=tk.W)
+        
+        self.add_padding(self.total_round_frame)
         
         
-        # need to create a button frame with one button to roll die (this is the action button)
-            # will need to implement callback function to run game logic
+        # roll die button frame & button    
+        self.button_frame = ttk.Frame(self, padding="10 10 10 10", borderwidth=2, relief="solid")
+        self.button_frame.grid(column=0, row=5, columnspan=3)
+        
+        self.roll_button = ttk.Button(self.button_frame, text="ROLL DIE - GOOD LUCK", command=self.roll_die)
+        self.roll_button.grid(column=0, row=0)
+        
+        self.add_padding(self.button_frame)
         
         
-        # need to create rules frame with label to state the rules of the game 
+        # game rule frame 
         
+        self.game_rule_frame = ttk.Frame(self, padding="10 10 10 10", borderwidth=2, relief="solid")
+        self.game_rule_frame.grid(column=0, row=6, columnspan=3)
         
+        self.game_rule_label = ttk.Label(self.game_rule_frame, text="RULES: First to win 10 rounds wins the game", font=("Arial", 10, "bold"))
+        self.game_rule_label.grid(column=0, row=0)
         
+        self.add_padding(self.game_rule_frame)
         
             
-        
-        
+    
+    #callback function to roll die (will update later with logic)
+    def roll_die():
+        pass
         
     # Created method to add padding to all componenets within the frame (still need to work on the padding)
     def add_padding(self, frame):
