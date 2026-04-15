@@ -15,6 +15,13 @@ Project Proposal
 	"The goal of this project is to build a dice roll game named "Dice Duel" using the combination of python and tkinter. 
 	The game logic is where a player(user) rolls a six-sided die against a roll from the house(computer). The highest roll 
 	wins the round, and the main rule of the game is a race to win 10 rounds total to win the entire game."
+
+
+	Program Overview:
+	-The Dice Duel Game is a simple turn-based game where a player competes against the house by rolling dice.
+	-Scores are tracked across multiple rounds until one participant reaches the winning score.
+	-The program is designed with a focus on simplicity to allow easy comprehension from all users. (No complex mechanics or learning curve to play)
+	-Each round, both the player and the house roll a die, and the higher value wins the round.
 	
 	**Maybe add more to the hypo? 
 	
