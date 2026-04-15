@@ -1,11 +1,15 @@
 import tkinter as tk
 from tkinter import ttk
+from Business import DiceDuelGame
 
 
 class DiceDuelFrame(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent, padding="10 10 10 10")
         self.pack(fill=tk.BOTH, expand=True)
+        
+        # create game
+        self.game = DiceDuelGame()
           
 
         # title frame and label
@@ -134,9 +138,23 @@ class DiceDuelFrame(ttk.Frame):
         
             
     
-    #callback function to roll die (will update later with logic)
-    def roll_die():
-        pass
+    #callback function to roll die using game logic
+    def roll_die(self):
+        data = self.game.play_round()
+
+        # update GUI values
+        self.player_roll.set(str(data["player_roll"]))
+        self.house_roll.set(str(data["house_roll"]))
+        self.round_result.set(data["result"])
+        self.player_score.set(str(data["player_score"]))
+        self.house_score.set(str(data["house_score"]))
+        self.total_round.set(str(data["rounds_played"]))
+
+        # check for winner
+        winner = self.game.check_winner()
+        if winner:
+            self.round_result.set(f"{winner} wins the game!")
+            self.roll_button.config(state="disabled")
         
     # Created method to add padding to all componenets within the frame (still need to work on the padding)
     def add_padding(self, frame):
@@ -151,5 +169,3 @@ if __name__ == "__main__":
     DiceDuelFrame(root)
     root.mainloop()
 
-
-	
