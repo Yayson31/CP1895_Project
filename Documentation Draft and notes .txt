@@ -1,6 +1,6 @@
-draft notes for Documentation: 
+Draft notes for Documentation: 
 
-project proposal
+Project Proposal
 
 1. Hypothesis draftV1 
 	- what I think the final product should look like 
@@ -29,9 +29,11 @@ project proposal
 	
 	==============================================================================
 	
-2. specifications 
+2. Specifications 
 	- what the program must do from start to finish 
 	- think functionality game flow
+	-Ensure the game progresses correctly through rounds and terminates when a player reaches the winning score
+	-
 	
 	** basic game flow 
 	gameStart 
@@ -72,8 +74,10 @@ project proposal
 	** add more details as we get closer to final product 
 	** found more about styles online, will look into this further
 		-essentially the layout structure of the app 
-		-maybe colors if possile 
-		-anything details to making the app more appealing 
+		-maybe colors if possible 
+		-anything details to making the app more appealing
+		-color indication to signify game completion (button gets greyed out)
+		-buttons highlighted when clicked
 		
 3. Scope of the project **maybe more details?
 	- what we will include (basics of the app)
@@ -81,6 +85,7 @@ project proposal
 		-keeps track of score 
 		-GUI interface
 		-rules to win 
+		-Potentially a history of rolls made during the game either as a GUI feature or prompted as post game statistics.
 		
 	- what we will not include (not sure if we need this...)
 		-multiplayer
@@ -98,7 +103,7 @@ project proposal
 	-Documentation and project proposal
 	
 	Tyler
-	-Game logic implimenation 
+	-Game logic implimentation 
 	-more details to be added as we get closer to final product
 	-Documentation and project proposal
 	
@@ -142,7 +147,7 @@ only one roll for each player per round
 any draws or ties will not count at all 
 
 
-flow of round
+flow of round:
 player clicks roll die button 
 
 game logic generates random roll value from 1 - 6 for both player and house
