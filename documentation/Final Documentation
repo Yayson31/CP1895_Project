@@ -1,0 +1,63 @@
+Project Overview:
+
+Our goal with this project was to design and develop a dice-based game called Dice Duel using Python and the Tkinter library.
+The application simulates a turn-based game where a player competes against the house (computer) by rolling a six-sided die. 
+The higher roll wins each round, and the overall objective is to be the first to win 10 rounds.
+
+The expected outcome of the final product is a user-friendly graphical interface that clearly displays all game data, including dice rolls, round results, and score tracking.
+The program was designed with simplicity in mind to ensure that users can easily understand and interact with the game without a steep learning curve.
+
+Program Specifications:
+
+Allow the user to initiate gameplay through a button click
+Simulate a six sided dice roll for both the player and the house
+Display both dice roll values in real time within the GUI
+Determine the winner of each round based on the highest roll
+Track and update the score for both the player and the house
+Keep count of the total number of rounds played
+Detect when a player reaches 10 wins and terminate the game
+Display a message indicating the winner of the game
+Provide a reset option
+
+Game Rules:
+
+Each round consists of one roll per player
+The highest roll earns 1 point
+Ties do not award points
+The first player to reach 10 points wins the game
+
+Technical Design:
+
+Our program follows a modular structure that separates logic and interface
+
+- Game Logic Class
+Handles dice rolling, score tracking, and game rules
+Determines round outcomes and win conditions
+
+- GUI Class
+Handles layout, labels, and user interaction
+Displays results and updates based on game logic
+
+Team Roles and Responsibilities:
+
+- Tyler
+Implemented game logic and structure
+Contributed to documentation
+Logic & GUI integration
+
+- Jason
+Designed and implemented GUI layout and aesthetics
+Contributed to documentation
+Logic & GUI integration
+
+- ***Amanda (when available)*** (If she makes a last minute appearance)
+Assisted with testing and refinement
+
+*** Room for UML Diagram/maybe throw that under technical design area ***
+
+
+
+Potentially a conclusion area? Unsure how these are generally layed out. 
+
+Feel free to make any edits/additions, we can look over this later tonight.
+
