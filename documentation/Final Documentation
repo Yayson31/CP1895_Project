@@ -30,6 +30,14 @@ Technical Design:
 
 Our program follows a modular structure that separates logic and interface
 
+-Language: Python 3
+
+-Framework: Tkinter for the graphical user interface
+
+-Architecture: Two‑class, object‑oriented design
+
+Layering:
+
 - Game Logic Class
 Handles dice rolling, score tracking, and game rules
 Determines round outcomes and win conditions
@@ -37,6 +45,13 @@ Determines round outcomes and win conditions
 - GUI Class
 Handles layout, labels, and user interaction
 Displays results and updates based on game logic
+
+Aesthetics:
+Uses a retro arcade theme with a dark background and neon colors to create a fun, engaging atmosphere.
+- High‑contrast Lime text on black improves readability for all users.
+- Interactive feedback (button highlights and disabled state at game end) guides the player through actions.
+- Consistent spacing, frames, and centered layout keep the interface clean, organized, and user‑friendly.
+
 
 Team Roles and Responsibilities:
 
@@ -54,10 +69,19 @@ Logic & GUI integration
 Assisted with testing and refinement
 
 *** Room for UML Diagram/maybe throw that under technical design area ***
+The UML diagram shows how the Dice Duel program is organized into two main classes that work together. 
+DiceDuelGame handles all game rules, scoring, and round logic, while DiceDuelFrame manages the user 
+interface and updates what the player sees. The GUI depends on the game logic but not the other way around, 
+creating a clear separation between presentation and functionality. 
+This structure keeps the program easier to understand, maintain, and extend.
 
 
-
-Potentially a conclusion area? Unsure how these are generally layed out. 
+Potentially a conclusion area? Unsure how these are generally layed out.
+(maybe something like this?)
+Dice Duel meets all project requirements, provides a clear and user‑friendly interface, 
+and uses a clean modular design that separates logic from presentation. The final result 
+is a functional, easy‑to‑maintain application built through effective team collaboration.
+ 
 
 Feel free to make any edits/additions, we can look over this later tonight.
 
