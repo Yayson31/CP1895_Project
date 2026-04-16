@@ -79,8 +79,8 @@ Project Proposal
 	
 	Aesthetic Plan (this one is worth 15%) 
 	** add more details as we get closer to final product 
-	** found more about styles online, will look into this further
-		-Applied night neon theme to application layout 
+	** working to put more detail in this
+		-Applied night neon arcade theme to application layout 
 		-darker colors used to make application user friendly
 		-color indication to signify game completion (button gets greyed out)
 		-buttons highlighted when clicked
